@@ -6,7 +6,7 @@ export const AppWrapper = () => {
   return (
     <ConfigProvider
       theme={{
-        algorithm: [isDarkMode ? theme.defaultAlgorithm : theme.darkAlgorithm]
+        algorithm: [isDarkMode ? theme.darkAlgorithm : theme.defaultAlgorithm]
       }}>
       <App style={{ colorScheme: isDarkMode ? 'dark' : 'light' }}>Hello</App>
     </ConfigProvider>
