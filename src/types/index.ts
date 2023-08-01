@@ -1,3 +1,11 @@
+type SupportedPlatforms = 'OpenAI-ChatGPT' | 'OpenAI-DALLE';
+type OpenedToolStatus = 'idle' | 'busy' | 'done' | 'fail';
+
+export interface OpenedTool {
+  platform: SupportedPlatforms;
+  status: OpenedToolStatus;
+}
+
 export interface StoredPreference {
   preferenceId?: string;
   value: string | number | boolean;
